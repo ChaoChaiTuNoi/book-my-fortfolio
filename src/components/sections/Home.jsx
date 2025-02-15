@@ -6,7 +6,7 @@ export const Home = () => {
             <RevealOnScroll>
             <div className="text-center z-10 px-4">
                 <div>
-                    <img src="/src/assets/peeps-avatar-alpha.png" alt="Avatar" className="mx-auto mb-6 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full" />
+                    <img src="./src/assets/peeps-avatar-alpha.png" alt="Avatar" className="mx-auto mb-6 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full" />
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right"> 
                     Hi, My name is Book 
