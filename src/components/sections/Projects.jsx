@@ -51,7 +51,7 @@ export const Projects = () => {
                             ))}
                         </div>
                         <div className="flex justify-between items-center">
-                                <a href="https://github.com/ChaoChaiTuNoi/nectec-web.git" target='blank' className="text-blue-400 hover:text-blue-300 transition-colors my-4">
+                                <a href="https://github.com/ChaoChaiTuNoi/nectec-web.git" target='' className="text-blue-400 hover:text-blue-300 transition-colors my-4">
                                     View Project →
                                 </a>
                         </div>
