@@ -1,4 +1,6 @@
 import { RevealOnScroll } from '../RevealOnScroll';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaVuejs, FaNodeJs, FaBootstrap } from 'react-icons/fa';
+import { SiTailwindcss, SiExpress, SiMongodb, SiFirebase, SiMysql, SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator, SiAdobephotoshop, SiFigma, SiAdobexd, SiBlender } from 'react-icons/si';
 
 export const About = () => {
 
@@ -18,6 +20,39 @@ export const About = () => {
         "Firebase",
         "SQL",
     ]
+    const Motiondesigner = [
+        "After Effect",
+        "Premiere Pro",
+        "Illustrator",
+        "Photoshop",
+        "Figma",
+        "XD",
+        "Blender",
+    ]
+    const tools = {
+    "HTML5":<FaHtml5 size={20}/> ,
+     "CSS3": <FaCss3Alt size={20} /> ,
+    "JavaScript": <FaJs size={20} /> ,
+     "React": <FaReact size={20} /> ,
+    "Vue": <FaVuejs size={20} /> ,
+     "Tailwind CSS": <SiTailwindcss size={20} /> ,
+     "Bootstrap": <FaBootstrap size={20} /> ,
+     "Node.js": <FaNodeJs size={20} /> ,
+     "Express.js": <SiExpress size={20} /> ,
+     "MongoDB": <SiMongodb size={20} /> ,
+     "Firebase": <SiFirebase size={20} /> ,
+     "SQL": <SiMysql size={20} /> ,
+     "After Effect": <SiAdobeaftereffects size={20} /> ,
+     "Premiere Pro": <SiAdobepremierepro size={20} /> ,
+     "Illustrator": <SiAdobeillustrator size={20} /> ,
+     "Photoshop": <SiAdobephotoshop size={20} /> ,
+     "Figma": <SiFigma size={20} /> ,
+     "XD": <SiAdobexd size={20} /> ,
+     "Blender": <SiBlender size={20} /> 
+    };
+
+    
+
     return (<section id="about" className="min-h-screen flex items-center justify-center py-20">
         <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
@@ -38,8 +73,8 @@ export const About = () => {
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-                      {tech}
+                      className="flex flex-row bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                      {tools[tech]}<span className="ml-2">{tech}</span>
                     </span>
                   ))}
 
@@ -54,16 +89,29 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-                      {tech}
+                      className="flex flex-row bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                      {tools[tech]}<span className="ml-2">{tech}</span>
                     </span>
                   ))}
 
                         </div>
-
                     </div>
-
                 </div>
+                <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+                    
+                    <h3 className="text-xl font-bold mb-4"> 
+                        Motion and designer
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                    {Motiondesigner.map((tech, key) => (
+                    <span
+                      key={key}
+                      className="flex flex-row bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+                      {tools[tech]}<span className="ml-2">{tech}</span>
+                    </span>
+                  ))}   
+                  </div>
+                    </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">

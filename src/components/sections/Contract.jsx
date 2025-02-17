@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaBriefcase } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaBriefcase,FaYoutube } from "react-icons/fa";
 
 export const Contact = () => {
   return (
@@ -20,20 +20,24 @@ export const Contact = () => {
               <FaEnvelope size={30} />
               <span>thanyavat.book@gmail.com</span>
             </a>
-            <div className="flex flex-wrap justify-center space-x-6">
-              <a href="https://github.com/ChaoChaiTuNoi" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
+            <div className="flex flex-wrap justify-center mt-4 space-x-6">
+              <a href="https://github.com/ChaoChaiTuNoi" target="blank" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
                 <FaGithub size={30} />
                 <span>GitHub</span>
               </a>
-              <a href="https://www.linkedin.com/in/thanyavat-udomsila/" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
+              <a href="https://www.linkedin.com/in/thanyavat-udomsila/" target="blank" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
                 <FaLinkedin size={30} />
                 <span>LinkedIn</span>
               </a>
-              <a href="https://www.instagram.com/tyv.book/" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
+              <a href="https://www.youtube.com/@thanyavatb.578" target="blank" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
+                <FaYoutube size={30} />
+                <span>Youtuber</span>
+              </a>
+              <a href="https://www.instagram.com/tyv.book/" target="blank" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
                 <FaInstagram size={30} />
                 <span>Instagram</span>
               </a>
-              <a href="https://fastwork.co/user/thanyavat" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
+              <a href="https://fastwork.co/user/thanyavat" target="blank" className="text-blue-400 hover:text-blue-300 transition-colors flex items-center space-x-3 text-lg sm:text-xl lg:text-2xl">
                 <FaBriefcase size={30} />
                 <span>Freelance</span>
               </a>
